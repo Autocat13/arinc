@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=585FJ-U1TWQ-8TF3P-MNPR7-Q56IW-GQT2N
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\soft\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\project\arinc\arinc.uvprojx
+Project File Date:  05/06/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\soft\keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling lib_linear_buffer.c...
+assembling startup_MDR1986VE3.S...
+compiling main.c...
+main.c(95): warning:  #188-D: enumerated type mixed with another type
+  		ARINC429R_ITConfig((ARINC429R_IT_INT_DR|ARINC429R_IT_INT_ER), ENABLE); //прерывание если в буфере приемника не пусто и по ощибки скорости, паузы | ARINC429R_IT_INT_ER 
+main.c: 1 warning, 0 errors
+compiling system_MDR1986VE3.c...
+compiling MDR32F9Qx_arinc429r.c...
+assembling MDR32F9Qx_eeprom_cache.S...
+compiling MDR32F9Qx_arinc429t.c...
+compiling MDR32F9Qx_eeprom.c...
+compiling MDR32F9Qx_port.c...
+compiling MDR32F9Qx_rst_clk.c...
+linking...
+Program Size: Code=3304 RO-data=224 RW-data=4 ZI-data=8500  
+FromELF: creating hex file...
+".\Objects\arinc.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://ic.milandr.ru/soft/Keil.MDR1986BExx.2.0.3.pack
+                Keil.MDR1986BExx.2.0.3
+                Milandr MDR1986BExx Series Device Support, Drivers and Examples
+   * Component: Startup Variant: 1. Rev.3+ Version: 2.0.3
+   * Component: ARINC429R Version: 2.0.3
+   * Component: ARINC429T Version: 2.0.3
+   * Component: EEPROM Version: 2.0.3
+   * Component: PORT Version: 2.0.3
+   * Component: RST_CLK Version: 2.0.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MDR1986BE3T
+  .\RTE\_Target_1
+  D:\soft\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  D:\soft\keil\pack\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\CoreSupport\CM1
+  D:\soft\keil\pack\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE3\inc
+  D:\soft\keil\pack\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1. Rev.3+:2.0.3
+      Source file:   Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE3\startup\arm\startup_MDR1986VE3.S
+      Source file:   Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE3\startup\arm\system_MDR1986VE3.c
+      Include file:  Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE3\startup\arm\system_MDR1986VE3.h
+      Include file:  Libraries\SPL\MDR32Fx\MDR32F9Qx_config.h
+      Include file:  Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE3\inc\MDR1986VE3.h
+      Include file:  Libraries\SPL\MDR32Fx\inc\IRQ_Handler_Template\MDR1986VE3_IT.h
+      Include file:  Libraries\CMSIS\MDR32Fx\CoreSupport\CM1\core_cm1.h
+      Source file:   Libraries\SPL\MDR32Fx\src\IRQ_Handler_Template\MDR1986VE3_IT.c
+
+   * Component: Keil::Drivers:ARINC429R:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_arinc429r.c
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_arinc429r.h
+
+   * Component: Keil::Drivers:ARINC429T:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_arinc429t.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_arinc429t.c
+
+   * Component: Keil::Drivers:EEPROM:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_eeprom.c
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_eeprom_cache.S
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_eeprom.h
+
+   * Component: Keil::Drivers:PORT:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_port.c
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_port.h
+
+   * Component: Keil::Drivers:RST_CLK:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_rst_clk.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_rst_clk.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

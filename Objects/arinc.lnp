@@ -1,0 +1,15 @@
+--cpu Cortex-M1
+".\objects\main.o"
+".\objects\lib_linear_buffer.o"
+".\objects\startup_mdr1986ve3.o"
+".\objects\system_mdr1986ve3.o"
+".\objects\mdr32f9qx_arinc429r.o"
+".\objects\mdr32f9qx_arinc429t.o"
+".\objects\mdr32f9qx_eeprom.o"
+".\objects\mdr32f9qx_eeprom_cache.o"
+".\objects\mdr32f9qx_port.o"
+".\objects\mdr32f9qx_rst_clk.o"
+--strict --scatter ".\Objects\arinc.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\arinc.map" -o .\Objects\arinc.axf

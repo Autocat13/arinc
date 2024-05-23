@@ -1,0 +1,12 @@
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\pack\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_arinc429r.c
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\pack\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_arinc429r.h
+.\objects\mdr32f9qx_arinc429r.o: .\RTE\Device\MDR1986BE3T\MDR32F9Qx_config.h
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mdr32f9qx_arinc429r.o: .\RTE\_Target_1\RTE_Components.h
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\pack\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE3\inc\MDR1986VE3.h
+.\objects\mdr32f9qx_arinc429r.o: .\RTE\Device\MDR1986BE3T\MDR32F9Qx_config.h
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm1.h
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\mdr32f9qx_arinc429r.o: D:\soft\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\mdr32f9qx_arinc429r.o: .\RTE\Device\MDR1986BE3T\system_MDR1986VE3.h
